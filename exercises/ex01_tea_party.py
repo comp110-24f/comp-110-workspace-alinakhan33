@@ -20,3 +20,13 @@ def treats(people: int) -> int:
 
 
 treats(people=2)
+
+
+def cost(tea_count: int, treat_count: int) -> float:
+    """Calculate the cost of treats and tea bags combined, return type is float"""
+    teabag_cost = tea_count * 0.5
+    treat_cost = treat_count * 0.75
+    return teabag_cost + treat_cost
+
+
+cost(tea_count=2, treat_count=6)
