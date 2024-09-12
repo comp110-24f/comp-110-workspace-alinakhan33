@@ -2,12 +2,10 @@
 
 __author__ = "730485036"
 
-"""Keep pushing changes to git!"""
-
 
 def main_planner(guests: int) -> None:
     """This function brings every function below together"""
-    """Using variables to calculate # of tea bags and treats based on # of guests"""
+    """All of these functions are local, so the print function occurs INSIDE main_planner"""
     print("A Cozy Tea Party for " + str(guests) + " People!")
     print("Tea Bags: " + str(tea_bags(people=guests)))
     print("Treats: " + str(treats(people=guests)))
@@ -34,5 +32,6 @@ def cost(tea_count: int, treat_count: int) -> float:
     return tea_count * 0.5 + treat_count * 0.75
 
 
+"""Call all functions and take input for number of guests attending"""
 if __name__ == "__main__":
     main_planner(guests=int(input("How many guests are attending your tea party? ")))
