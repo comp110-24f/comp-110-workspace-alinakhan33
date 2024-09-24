@@ -35,3 +35,21 @@ def input_letter() -> str:
 
 
 input_letter()
+
+
+def contains_char(word: str, letter: str) -> None:
+
+    print("Searching for" + letter + "in" + word)
+    if word[0] == letter:
+        print(str(letter) + "found at index 0")
+    if word[1] == letter:
+        print(str(letter) + "found at index 1")
+    if word[2] == letter:
+        print(str(letter) + "found at index 2")
+    if word[3] == letter:
+        print(str(letter) + "found at index 3")
+    if word[4] == letter:
+        print(str(letter) + "found at index 4")
+
+
+contains_char(word="kitty", letter="z")
