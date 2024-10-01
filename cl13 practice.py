@@ -31,6 +31,7 @@ print(last_game)
 # (because lists are mutable)
 game_points[1] = 72
 print(game_points)
+print(len(game_points))
 
 class: str = "110" # change it to "210"
 class_num[0] = "2"
@@ -42,8 +43,22 @@ len(game_points)
 game_points.pop(1)
 print(game_points)
 
+
+
 # Function name: display
 # Parameter: list of integers
 # RV: None
 # Print every element in the input list
 # Call display on game_points
+
+def display(int_list: list[int]) -> None:
+    """Displays all elements of int_list"""
+
+
+    index: int = 0
+
+    while index < len(int_list):
+        print(int_list[index])
+        index += 1
+
+display(int_list=game_points)
